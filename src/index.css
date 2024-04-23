@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --color-primary : #F6A64F;
+  --color-secondary : #b56141;
+  --color-background : #FFFCF8; 
+  --color-white : #FBFBFB;
+  --color-highlight : #fee6cc;
+  --color-gradient-from : #f4a44f;
+  --color-gradient-to : #ac573f;
+
+  --background-image-gradient-primary: linear-gradient(to right, var(--color-gradient-from), var(--color-gradient-to));
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', "sans-serif";
+    
+  }
+  body {
+    overflow-x: hidden;   
+    /* @apply lg:max-w-[80rem] lg:mx-auto; */ 
+  }
+}
+
+@layer components {
+  .menu-wrapper {
+    @apply md:flex flex-col md:flex-row  gap-4 lg:gap-8 text-sm font-medium absolute md:static top-[70px] left-0 w-full md:w-auto bg-white/45 md:bg-transparent rounded-lg md:rounded-none shadow-md md:shadow-none p-4 md:p-0 z-50 border border-highlight md:border-none backdrop-blur-[30.90px]
+  }
+
+  .menu-item {
+    @apply relative before:content-[''] before:absolute before:w-0 before:h-[3px] before:bg-gradient-primary before:rounded-full before:-bottom-1 before:left-0 before:transition-all before:duration-300 hover:before:w-full cursor-pointer;
+  }
+
+  .action-btn-outline {
+    @apply h-10 md:h-12 text-xs md:text-[14px] font-medium text-primary px-4 lg:px-10 rounded-[71px] border-2 border-primary
+  }
+
+  .action-btn {
+    @apply h-10 md:h-12 text-xs md:text-[14px] font-medium text-white bg-gradient-primary px-4 lg:px-10 rounded-[71px] border-2 
+  }
+
+  .btn-scale-anim {
+    @apply transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg;
+  }
+
+  .profile-pic {
+    @apply w-[275x] md:w-[370px] h-[325px] md:h-[428px] rotate-[5.75deg] transition-transform duration-300 ease-in-out hover:scale-105 hover:rotate-[3deg];
+  }
+
+  .icon-img {
+    @apply w-12 md:w-16 h-12 md:h-16 absolute transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-0;
+  }
+
+  .section-title {
+    @apply text-[26px] font-semibold text-center bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .arrow-btn {
+    @apply absolute top-1/2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full shadow;
+  }
+
+  .input-box {
+    @apply bg-orange-50 rounded-2xl border border-orange-100 px-4 py-3 placeholder:text-orange-400/80 placeholder:text-sm mb-5 focus:outline-none focus:border-primary
+  }
+}
