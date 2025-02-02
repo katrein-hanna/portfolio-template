@@ -1,12 +1,47 @@
-# React + Vite
+# 💼 Portfolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive personal portfolio template built with **React** and **Tailwind CSS**, designed to showcase your projects, skills, and contact information in a modern and visually appealing way.
 
-Currently, two official plugins are available:
+> 🔗 [Live Demo](https://portfolio-template-k.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ **Fast and responsive** design for all screen sizes
+- 🧭 Structured sections: About Me, Projects, Skills, Contact
+- 🎨 Styled with Tailwind CSS
+- 📁 Easily customizable and extendable components
+- 🚀 Deployed with Netlify
+
+---
+
+## 🧱 Sections Included
+
+- **Homepage** – Intro with hero banner and CTA
+- **About Me** – Background and short bio
+- **Projects** – Highlighted projects with descriptions
+- **Skills** – Icons + filtering for technical proficiency
+- **Contact Me** – Form and contact details
+- **Footer** – Social links and minimal copyright
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Vite)
+- **Tailwind CSS**
+- **Netlify** (deployment)
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally:
+
+```bash
+git clone https://github.com/katrein-hanna/portfolio-template.git
+cd portfolio-template
+npm install
+npm run dev
+```
